@@ -16,7 +16,13 @@ function App() {
   const subtractValue = () => {
     console.log('Subtract value', counter)
     counter = counter - 1
+    if(counter > 0){
     setCounter(counter - 1) 
+  }
+  else{
+    counter = 0 
+    setCounter(counter)
+  }
   }
 
   const removeValue = () => {
